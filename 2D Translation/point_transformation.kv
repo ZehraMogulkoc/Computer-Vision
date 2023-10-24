@@ -1,0 +1,22 @@
+<PointTransformationWidget>:
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Enter Transformation Parameters:'
+        TextInput:
+            id: tx_input
+            hint_text: 'tx'
+        TextInput:
+            id: ty_input
+            hint_text: 'ty'
+        TextInput:
+            id: rotation_input
+            hint_text: 'Rotation angle'
+        TextInput:
+            id: scale_input
+            hint_text: 'Scaling factor'
+        Button:
+            text: 'Transform'
+            on_press: root.transform_points()
+        BoxLayout:
+            id: transformed_canvas
